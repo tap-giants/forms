@@ -32,10 +32,12 @@ module.exports = {
     new ExtractTextPlugin("styles.css"),
   ],
   resolve: {
+    // modules: [ 'src', 'node_modules'],
     alias: {
       'react': path.resolve(__dirname, './node_modules/react'),
       'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
       'formik': path.resolve(__dirname, './node_modules/formik'),
+      'react-apollo': path.resolve(__dirname, './node_modules/react-apollo'),
       'recompose': path.resolve(__dirname, './node_modules/recompose'),
       'react-apollo': path.resolve(__dirname, './node_modules/react-apollo')
     }
