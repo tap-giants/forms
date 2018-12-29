@@ -1,3 +1,4 @@
+import React from 'react';
 import { compose, withStateHandlers } from 'recompose';
 import { Field, FormContext } from '../../../src';
 import TokensListWrapper from './TokensListWrapper';

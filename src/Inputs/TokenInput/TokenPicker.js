@@ -1,3 +1,4 @@
+import React from 'react';
 import { compose } from 'recompose';
 import { withApollo } from 'react-apollo';
 import withGQLSearch from '../AutocompleteInput/withGQLSearch';

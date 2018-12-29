@@ -20,7 +20,6 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "formik": "^1.4.1",
     "react": "^16.7.0",
-    "react-apollo": "^2.3.3",
     "react-dom": "^16.7.0",
     "recompose": "^0.30.0",
     "style-loader": "^0.23.1",
@@ -31,7 +30,6 @@
   "peerDependencies": {
     "formik": "^1.4.1",
     "react": "^16.7.0",
-    "react-apollo": "^2.3.3",
     "react-dom": "^16.7.0",
     "react-apollo": "^2.3.3",
     "recompose": "^0.30.0"

@@ -1,3 +1,5 @@
+import React from 'react';
+
 const CheckboxOption = ({ name, label, index, value, groupValues, push, remove }) => (
   <React.Fragment>
     <div className="form-check">

@@ -1,3 +1,4 @@
+import React from 'react';
 import TokenPicker from './TokenPicker';
 
 const TokensListWrapper = ({ name, label, pickerQuery, pickerPath, filterInputMapper, children, addOption }) => (
