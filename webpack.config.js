@@ -72,14 +72,12 @@ module.exports = {
     'react-apollo': {
       commonjs: 'react-apollo',
       commonjs2: 'react-apollo',
-      amd: 'react-apollo',
-      root: 'react-apollo'
+      amd: 'react-apollo'
     },
     'apollo-boost': {
       commonjs: 'apollo-boost',
       commonjs2: 'apollo-boost',
-      amd: 'apollo-boost',
-      root: 'apollo-boost'
+      amd: 'apollo-boost'
     },
     'graphql': {
       commonjs: 'graphql',
