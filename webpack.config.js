@@ -82,8 +82,7 @@ module.exports = {
     'graphql': {
       commonjs: 'graphql',
       commonjs2: 'graphql',
-      amd: 'graphql',
-      root: 'graphql'
+      amd: 'graphql'
     }
   }
 };
