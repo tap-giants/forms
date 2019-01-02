@@ -40,6 +40,7 @@
     "recompose": "^0.30.0"
   },
   "dependencies": {
-    "react-autocomplete": "^1.8.1"
+    "react-autocomplete": "^1.8.1",
+    "react-datepicker": "^2.0.0"
   }
 }
