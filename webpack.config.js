@@ -6,7 +6,9 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    umdNamedDefine: true,
+    globalObject: 'this'
   },
   module: {
     rules: [
