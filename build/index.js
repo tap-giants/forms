@@ -1,5 +1,14 @@
-module.exports =
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("formik"), require("react"), require("react-apollo"), require("react-dom"), require("recompose"));
+	else if(typeof define === 'function' && define.amd)
+		define(["formik", "React", "react-apollo", "ReactDOM", "recompose"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("formik"), require("react"), require("react-apollo"), require("react-dom"), require("recompose")) : factory(root["formik"], root["React"], root["react-apollo"], root["ReactDOM"], root["recompose"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(window, function(__WEBPACK_EXTERNAL_MODULE_formik__, __WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_apollo__, __WEBPACK_EXTERNAL_MODULE_react_dom__, __WEBPACK_EXTERNAL_MODULE_recompose__) {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -4442,7 +4451,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _For
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"formik\");\n\n//# sourceURL=webpack:///external_%7B%22commonjs%22:%22formik%22,%22commonjs2%22:%22formik%22,%22amd%22:%22formik%22,%22root%22:%22formik%22%7D?");
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_formik__;\n\n//# sourceURL=webpack:///external_%7B%22commonjs%22:%22formik%22,%22commonjs2%22:%22formik%22,%22amd%22:%22formik%22,%22root%22:%22formik%22%7D?");
 
 /***/ }),
 
@@ -4453,7 +4462,7 @@ eval("module.exports = require(\"formik\");\n\n//# sourceURL=webpack:///external
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"react\");\n\n//# sourceURL=webpack:///external_%7B%22commonjs%22:%22react%22,%22commonjs2%22:%22react%22,%22amd%22:%22React%22,%22root%22:%22React%22%7D?");
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_react__;\n\n//# sourceURL=webpack:///external_%7B%22commonjs%22:%22react%22,%22commonjs2%22:%22react%22,%22amd%22:%22React%22,%22root%22:%22React%22%7D?");
 
 /***/ }),
 
@@ -4464,7 +4473,7 @@ eval("module.exports = require(\"react\");\n\n//# sourceURL=webpack:///external_
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"react-apollo\");\n\n//# sourceURL=webpack:///external_%7B%22commonjs%22:%22react-apollo%22,%22commonjs2%22:%22react-apollo%22,%22amd%22:%22react-apollo%22,%22root%22:%22react-apollo%22%7D?");
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_react_apollo__;\n\n//# sourceURL=webpack:///external_%7B%22commonjs%22:%22react-apollo%22,%22commonjs2%22:%22react-apollo%22,%22amd%22:%22react-apollo%22,%22root%22:%22react-apollo%22%7D?");
 
 /***/ }),
 
@@ -4475,7 +4484,7 @@ eval("module.exports = require(\"react-apollo\");\n\n//# sourceURL=webpack:///ex
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"react-dom\");\n\n//# sourceURL=webpack:///external_%7B%22commonjs%22:%22react-dom%22,%22commonjs2%22:%22react-dom%22,%22amd%22:%22ReactDOM%22,%22root%22:%22ReactDOM%22%7D?");
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_react_dom__;\n\n//# sourceURL=webpack:///external_%7B%22commonjs%22:%22react-dom%22,%22commonjs2%22:%22react-dom%22,%22amd%22:%22ReactDOM%22,%22root%22:%22ReactDOM%22%7D?");
 
 /***/ }),
 
@@ -4486,8 +4495,9 @@ eval("module.exports = require(\"react-dom\");\n\n//# sourceURL=webpack:///exter
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = require(\"recompose\");\n\n//# sourceURL=webpack:///external_%7B%22commonjs%22:%22recompose%22,%22commonjs2%22:%22recompose%22,%22amd%22:%22recompose%22,%22root%22:%22recompose%22%7D?");
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_recompose__;\n\n//# sourceURL=webpack:///external_%7B%22commonjs%22:%22recompose%22,%22commonjs2%22:%22recompose%22,%22amd%22:%22recompose%22,%22root%22:%22recompose%22%7D?");
 
 /***/ })
 
 /******/ });
+});
