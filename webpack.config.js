@@ -10,6 +10,9 @@ module.exports = {
     umdNamedDefine: true,
     globalObject: 'this'
   },
+  optimization: {
+    namedModules: true
+  },
   module: {
     rules: [
       {
