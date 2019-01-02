@@ -9,5 +9,6 @@ export { default as Field } from './Field';
 export { default as FieldGQL } from './FieldGQL';
 export { default as Submit } from './Submit';
 export { default as FormContext } from './FormContext';
+export { default as withForm } from './withForm';
 
 export default Form;
