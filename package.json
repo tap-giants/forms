@@ -1,10 +1,10 @@
 {
-  "name": "@tapgiants/forms",
+  "name": "@tapgiants/form",
   "version": "1.0.0",
   "description": "Form markup and data helpers for use with Formik",
   "main": "build/index.js",
   "repository": "https://github.com/tap-giants/forms.git",
-  "author": "Vestimir Markov",
+  "author": "Tap Giants",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
