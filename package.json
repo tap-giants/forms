@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Form markup and data helpers for use with Formik",
   "main": "build/index.js",
-  "repository": "https://github.com/tap-giants/forms.git",
+  "repository": "https://github.com/tapgiants/form.git",
   "author": "Tap Giants",
   "license": "MIT",
   "scripts": {
