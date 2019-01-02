@@ -60,14 +60,12 @@ module.exports = {
     formik: {
       commonjs: 'formik',
       commonjs2: 'formik',
-      amd: 'formik',
-      root: 'formik'
+      amd: 'formik'
     },
     recompose: {
       commonjs: 'recompose',
       commonjs2: 'recompose',
-      amd: 'recompose',
-      root: 'recompose'
+      amd: 'recompose'
     },
     'react-apollo': {
       commonjs: 'react-apollo',
