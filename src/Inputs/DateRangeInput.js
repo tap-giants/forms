@@ -34,16 +34,14 @@ const withDateRangeStateHandlers = compose(
   withState('endDateValue', 'updateEndDateValue', ({ endFieldName, formCtx: { values } }) => {
     return values[endFieldName] ? new Date(values[endFieldName]) : new Date();
   }),
-  withHandlers(
-    {
-      startChange: ({ startFieldName, formCtx: { setFieldValue }, updateStartDateValue }) => (date) => {
-        updateStartDateValue(date, () => setFieldValue(startFieldName, date.toISOString()));
-      },
-      endChange: ({ endFieldName, formCtx: { setFieldValue }, updateEndDateValue }) => (date) => {
-        updateEndDateValue(date, () => setFieldValue(endFieldName, date.toISOString()));
-      }
+  withHandlers({
+    startChange: ({ startFieldName, formCtx: { setFieldValue }, updateStartDateValue }) => (date) => {
+      updateStartDateValue(date, () => setFieldValue(startFieldName, date.toISOString()));
+    },
+    endChange: ({ endFieldName, formCtx: { setFieldValue }, updateEndDateValue }) => (date) => {
+      updateEndDateValue(date, () => setFieldValue(endFieldName, date.toISOString()));
     }
-  )
+  })
 )
 
 export default withDateRangeStateHandlers(DateRangeInput);
