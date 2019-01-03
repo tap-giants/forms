@@ -41,7 +41,6 @@ module.exports = {
     alias: {
       'react': path.resolve(__dirname, './node_modules/react'),
       'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
-      'formik': path.resolve(__dirname, './node_modules/formik'),
       'react-apollo': path.resolve(__dirname, './node_modules/react-apollo'),
       'apollo-boost': path.resolve(__dirname, './node_modules/apollo-boost'),
       'graphql': path.resolve(__dirname, './node_modules/graphql'),
@@ -60,11 +59,6 @@ module.exports = {
       commonjs2: 'react-dom',
       amd: 'ReactDOM',
       root: 'ReactDOM'
-    },
-    formik: {
-      commonjs: 'formik',
-      commonjs2: 'formik',
-      amd: 'formik'
     },
     recompose: {
       commonjs: 'recompose',

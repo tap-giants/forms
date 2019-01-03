@@ -20,7 +20,6 @@
     "babel-loader": "^8.0.4",
     "css-loader": "^2.1.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "formik": "^1.4.1",
     "graphql": "^14.0.2",
     "react": "^16.7.0",
     "react-apollo": "^2.3.3",
@@ -32,7 +31,6 @@
   },
   "peerDependencies": {
     "apollo-boost": "^0.1.23",
-    "formik": "^1.4.1",
     "graphql": "^14.0.2",
     "react": "^16.7.0",
     "react-apollo": "^2.3.3",
@@ -40,6 +38,7 @@
     "recompose": "^0.30.0"
   },
   "dependencies": {
+    "formik": "^1.4.1",
     "react-autocomplete": "^1.8.1",
     "react-datepicker": "^2.0.0"
   }
