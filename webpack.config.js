@@ -41,9 +41,6 @@ module.exports = {
     alias: {
       'react': path.resolve(__dirname, './node_modules/react'),
       'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
-      'react-apollo': path.resolve(__dirname, './node_modules/react-apollo'),
-      'apollo-boost': path.resolve(__dirname, './node_modules/apollo-boost'),
-      'graphql': path.resolve(__dirname, './node_modules/graphql'),
       'recompose': path.resolve(__dirname, './node_modules/recompose')
     }
   },
@@ -64,21 +61,6 @@ module.exports = {
       commonjs: 'recompose',
       commonjs2: 'recompose',
       amd: 'recompose'
-    },
-    'react-apollo': {
-      commonjs: 'react-apollo',
-      commonjs2: 'react-apollo',
-      amd: 'react-apollo'
-    },
-    'apollo-boost': {
-      commonjs: 'apollo-boost',
-      commonjs2: 'apollo-boost',
-      amd: 'apollo-boost'
-    },
-    'graphql': {
-      commonjs: 'graphql',
-      commonjs2: 'graphql',
-      amd: 'graphql'
     }
   }
 };
