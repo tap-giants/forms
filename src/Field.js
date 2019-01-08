@@ -12,7 +12,6 @@ import {
   RadioGroupInput,
   CheckboxInput,
   CheckboxGroupInput,
-  AutocompleteInput,
   DateInput,
   DateRangeInput
 } from './Inputs';
@@ -27,7 +26,6 @@ const INPUTS = {
   email: EmailInput,
   password: PasswordInput,
   number: NumberInput,
-  autocomplete: AutocompleteInput,
   date: DateInput,
   dateRange: DateRangeInput
 };
@@ -49,22 +47,6 @@ const INPUTS = {
  *  endFieldName="to"
  *  label="Campaign period"
  * />
- *
- * Autocomplete Field
- *
- * const CountryField = compose(
- * withApollo,
- * mapResult((item) => ({ id: item.code, name: item.name })),
- * withGQLSearch({
- *   query: COUNTRIES,
- *   path: 'countries',
- *   filterInputMapper: (q) => ({ nameStartsWith: q })
- * }),
- * withSelectedItem((initialValue) => ({ id: initialValue.code, name: initialValue.name })),
- *  withAutocompleteHandlers
- * )(Field);
- *
- * <CountryField input="autocomplete" name="country" label="Country" {...formProps} />;
  **/
 
 export default ({ input, name, label, placeholder, hint, ...props }) => {

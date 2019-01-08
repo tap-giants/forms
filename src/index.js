@@ -1,10 +1,5 @@
 import Form from './Form';
 
-export { default as TokenInput } from './Inputs/TokenInput';
-
-export { withGQLSearch } from './Inputs/AutocompleteInput';
-export { AutocompleteWithHandlers } from './Inputs/AutocompleteInput';
-
 export { default as Field } from './Field';
 export { default as Submit } from './Submit';
 export { default as FormContext } from './FormContext';
