@@ -1,6 +1,6 @@
 {
   "name": "@tapgiants/form",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Form markup and data helpers for use with Formik",
   "main": "build/index.js",
   "repository": "https://github.com/tapgiants/form.git",
@@ -16,13 +16,10 @@
     "@babel/polyfill": "^7.2.5",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
-    "apollo-boost": "^0.1.23",
     "babel-loader": "^8.0.4",
     "css-loader": "^2.1.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "graphql": "^14.0.2",
     "react": "^16.7.0",
-    "react-apollo": "^2.3.3",
     "react-dom": "^16.7.0",
     "recompose": "^0.30.0",
     "style-loader": "^0.23.1",
@@ -30,15 +27,11 @@
     "webpack-cli": "^3.1.2"
   },
   "peerDependencies": {
-    "apollo-boost": "^0.1.23",
-    "graphql": "^14.0.2",
     "react": "^16.7.0",
-    "react-apollo": "^2.3.3",
     "react-dom": "^16.7.0",
     "recompose": "^0.30.0"
   },
   "dependencies": {
-    "formik": "^1.4.1",
-    "react-datepicker": "^2.0.0"
+    "formik": "^1.4.1"
   }
 }

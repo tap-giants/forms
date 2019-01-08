@@ -8,8 +8,6 @@ import SelectInput from './SelectInput';
 import RadioGroupInput from './RadioGroupInput';
 import CheckboxInput from './CheckboxInput';
 import CheckboxGroupInput from './CheckboxGroupInput';
-import DateInput from './DateInput';
-import DateRangeInput from './DateRangeInput';
 
 export {
   Input,
@@ -21,7 +19,5 @@ export {
   SelectInput,
   RadioGroupInput,
   CheckboxInput,
-  CheckboxGroupInput,
-  DateInput,
-  DateRangeInput
+  CheckboxGroupInput
 };

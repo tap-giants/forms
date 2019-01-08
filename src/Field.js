@@ -11,9 +11,7 @@ import {
   SelectInput,
   RadioGroupInput,
   CheckboxInput,
-  CheckboxGroupInput,
-  DateInput,
-  DateRangeInput
+  CheckboxGroupInput
 } from './Inputs';
 
 const INPUTS = {
@@ -25,9 +23,7 @@ const INPUTS = {
   radioGroup: RadioGroupInput,
   email: EmailInput,
   password: PasswordInput,
-  number: NumberInput,
-  date: DateInput,
-  dateRange: DateRangeInput
+  number: NumberInput
 };
 
 /**
