@@ -36,13 +36,6 @@ const INPUTS = {
  * <Field input="radioGroup" name="gender" label="Gender" options={GENDERS} />
  * <Field input="checkbox" name="hq" label="HQ?" />
  * <Field input="checkboxGroup" name="industries" label="Industries" options={INDUSTRIES} />
- * <Field input="date" name="from" label="From" />
- * <Field
- *  input="dateRange"
- *  startFieldName="from"
- *  endFieldName="to"
- *  label="Campaign period"
- * />
  **/
 
 export default ({ input, name, label, placeholder, hint, ...props }) => {
