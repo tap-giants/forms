@@ -67,7 +67,7 @@ const TapGiantsForm = withForm({
     console.log('handleSubmit formikBag', formikBag);
     // handleSubmit formikBag: check https://jaredpalmer.com/formik/docs/api/withFormik
   }
-})(FormMarkup)
+})(FormMarkup);
 
 // Pass custom prop to the form
 export default () => <TapGiantsForm formName="Test Form" />;
@@ -332,7 +332,7 @@ const TapGiantsForm = withForm({
     console.log('handleSubmit formikBag', formikBag);
     // handleSubmit formikBag: check https://jaredpalmer.com/formik/docs/api/withFormik
   }
-})(FormMarkup)
+})(FormMarkup);
 
 export default () => <TapGiantsForm formName="Test Form Fields" />;
 ```
