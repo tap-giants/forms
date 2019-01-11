@@ -35,7 +35,7 @@ import Form, { Field, Submit, withForm } from '@tapgiants/form';
 const FormMarkup = ({ formName, ...formikBag }) => (
   // Pass formikBag props to the Form component. In this way formik props are set in the `FormContext`
   <Form {...formikBag}>
-    <h1>formName</h1>
+    <h1>{formName}</h1>
 
     <Field
       input="email"
@@ -119,25 +119,81 @@ Field label.
 #### `hint`: String
 Field hint.
 
-#### Custom field
+### Some of the `Field` input types support additional props
 
-If `React.Component` is passed as input it will receive the following props:
+#### Select input props:
 
-#### `name`: String
-Field name.
+#### `options`: Array
+Options property will be used to populate the select field.
+The following options shape is required:
 
-#### `placeholder`: String
-Field label.
+```js
+[
+  { value: 'BG', label: 'Bulgaria' },
+  { value: 'BF', label: 'Burkina Faso' },
+  { value: 'BI', label: 'Burundi' }
+]
+```
 
-#### `formCtx`: Object
+##### `includeBlank`: Boolean, Default: true
+If the value of the `includeBlank` prop is set to `false` removes the empty option from the select.
 
-`formCtx` prop contains all the props passed to the `<Form>` and
- a list of Formik methods and props. Formik [reference](https://jaredpalmer.com/formik/docs/api/formik#formik-render-methods-and-props).
+##### `onChange`: Function
+Custom `onChange` handler. It receives two arguments.
+The first one is the standard event passed when `onChange` is called, so you can get selected value with `e.target.value.`
+The second one is the `formCtx`.
 
-All passed props to the `Field` will be provided to the custom component.
+##### `onBlur`: Function
+Custom `onBlur` handler. It receives two arguments.
+The first one is the standard event passed when `onBlur` is called, so you can get selected value with `e.target.value.`
+The second one is the `formCtx`.
+
+#### RadioGroup input props:
+
+#### `options`: Array
+Options property will be used to create the radio options.
+The following options shape is required:
+
+```js
+[
+  { value: 'male', label: 'Male' },
+  { value: 'female', label: 'Female' }
+]
+```
+
+#### CheckboxGroup input props:
+
+#### `options`: Array
+Options property will be used to create the checkbox options.
+The following options shape is required:
+
+```js
+[
+  { value: 1, label: 'IT' },
+  { value: 2, label: 'Cinema' },
+  { value: 3, label: 'Pharmacy' }
+]
+```
+
+#### `WrapperComponent`: React.Component
+Use in order to create custom checkbox group.
+
+If `WrapperComponent` is passed it will receive Formik's [FieldArray](https://jaredpalmer.com/formik/docs/api/fieldarray#fieldarray-helpers) array helpers.
+
+#### `renderOption`: React.Component
+Use in order to customize how the checkbox will be rendered.
+
+It will receive following props:
+
+  * name: String - Checkbox group name.
+  * label: String - Option label.
+  * value: Any - Option value.
+  * index: Integer - The position of the option in passed `options` prop.
+  * groupValues: Array - Selected options.
+  * push: Function - `arrayHelpers.push` is a [FieldArray](https://jaredpalmer.com/formik/docs/api/fieldarray#fieldarray-helpers) helper.
+  * remove: Function - `arrayHelpers.remove` is a [FieldArray](https://jaredpalmer.com/formik/docs/api/fieldarray#fieldarray-helpers) helper.
 
 ### Field examples
-
 ```jsx
 import React from 'react';
 
@@ -280,6 +336,23 @@ const TapGiantsForm = withForm({
 
 export default () => <TapGiantsForm formName="Test Form Fields" />;
 ```
+
+### Custom field
+
+If `React.Component` is passed as an input prop to the `Field` it will receive the following props:
+
+#### `name`: String
+Field name.
+
+#### `placeholder`: String
+Field label.
+
+#### `formCtx`: Object
+
+`formCtx` prop contains all the props passed to the `<Form>` and
+ a list of Formik methods and props. Formik [reference](https://jaredpalmer.com/formik/docs/api/formik#formik-render-methods-and-props).
+
+All passed props to the `Field` will be provided to the custom component.
 
 ### FormContext usage
 
