@@ -1,6 +1,6 @@
 {
   "name": "@tapgiants/form",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Form markup and data helpers for use with Formik",
   "main": "build/index.js",
   "repository": "https://github.com/tapgiants/form.git",
