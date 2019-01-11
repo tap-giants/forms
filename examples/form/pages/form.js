@@ -4,7 +4,7 @@ import Form, { Field, Submit, withForm } from '@tapgiants/form';
 
 const FormMarkup = ({ formName, ...formikBag }) => (
   <Form {...formikBag}>
-    <h1>formName</h1>
+    <h1>{formName}</h1>
 
     <Field
       input="email"
