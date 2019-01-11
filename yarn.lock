@@ -583,6 +583,13 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@tapgiants/form@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@tapgiants/form/-/form-1.0.10.tgz#c996862753639401bcdd51922f85547cca5d2cff"
+  integrity sha512-zSiQud/q76gVTora6JZgYSGDQ54Nm0Ur0Mj+G82ZzuBRQ07+FjSezrJ3qSCimczvJWJUqKnepPv6oYMD1Sfbaw==
+  dependencies:
+    formik "^1.4.1"
+
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.7.11.tgz#b988582cafbb2b095e8b556526f30c90d057cace"
@@ -2829,6 +2836,7 @@ readdirp@^2.0.0:
 recompose@^0.30.0:
   version "0.30.0"
   resolved "https://registry.yarnpkg.com/recompose/-/recompose-0.30.0.tgz#82773641b3927e8c7d24a0d87d65aeeba18aabd0"
+  integrity sha512-ZTrzzUDa9AqUIhRk4KmVFihH0rapdCSMFXjhHbNrjAWxBuUD/guYlyysMnuHjlZC/KRiOKRtB4jf96yYSkKE8w==
   dependencies:
     "@babel/runtime" "^7.0.0"
     change-emitter "^0.1.2"
