@@ -19,7 +19,7 @@ yarn add @tapgiants/form
 
 ## Form API
 
-`Form` component should be used in a combination with [`withForm`](#updateme) in order to receive [`formikBag`](https://jaredpalmer.com/formik/docs/api/withFormik) which will be passed to the [`FormContext`](#updateme).
+`Form` component should be used in a combination with [`withForm`](#withformformikprops-objectreactcomponent) in order to receive [`formikBag`](https://jaredpalmer.com/formik/docs/api/withFormik) which will be passed to the [`FormContext`](#formcontext-usage).
 
 ### Props
 
@@ -141,12 +141,12 @@ If the value of the `includeBlank` prop is set to `false` removes the empty opti
 ##### `onChange`: Function
 Custom `onChange` handler. It receives two arguments.
 The first one is the standard event passed when `onChange` is called, so you can get selected value with `e.target.value.`
-The second one is the `formCtx`.
+The second one is the [`formCtx`](#formcontext-usage).
 
 ##### `onBlur`: Function
 Custom `onBlur` handler. It receives two arguments.
 The first one is the standard event passed when `onBlur` is called, so you can get selected value with `e.target.value.`
-The second one is the `formCtx`.
+The second one is the [`formCtx`](#formcontext-usage).
 
 #### RadioGroup input props:
 
@@ -183,7 +183,7 @@ If `WrapperComponent` is passed it will receive Formik's [FieldArray](https://ja
 #### `renderOption`: React.Component
 Use in order to customize how the checkbox will be rendered.
 
-It will receive following props:
+It will receive the following props:
 
   * name: String - Checkbox group name.
   * label: String - Option label.
@@ -339,7 +339,7 @@ export default () => <TapGiantsForm formName="Test Form Fields" />;
 
 ### Custom field
 
-If `React.Component` is passed as an input prop to the `Field` it will receive the following props:
+If `React.Component` is passed as an input prop to the [`Field`](#field-api) it will receive the following props:
 
 #### `name`: String
 Field name.
@@ -349,10 +349,10 @@ Field label.
 
 #### `formCtx`: Object
 
-`formCtx` prop contains all the props passed to the `<Form>` and
+[`formCtx`](#formcontext-usage) prop contains all the props passed to the [`<Form>`](#form-api) and
  a list of Formik methods and props. Formik [reference](https://jaredpalmer.com/formik/docs/api/formik#formik-render-methods-and-props).
 
-All passed props to the `Field` will be provided to the custom component.
+All passed props to the [`Field`]((#field-api)) will be provided to the custom component.
 
 ### Custom field example
 
