@@ -26,18 +26,6 @@ const INPUTS = {
   number: NumberInput
 };
 
-/**
- * Field types
- * <Field name="name" label="Name" />
- * <Field input="email" name="email" label="Email" />
- * <Field input="password" name="password" label="Password" />
- * <Field input="textarea" name="notes" label="Notes" />
- * <Field input="select" name="country" label="Country" options={COUNTRIES} onChange={...} onBlur={...} />
- * <Field input="radioGroup" name="gender" label="Gender" options={GENDERS} />
- * <Field input="checkbox" name="hq" label="HQ?" />
- * <Field input="checkboxGroup" name="industries" label="Industries" options={INDUSTRIES} />
- **/
-
 export default ({ input, name, label, placeholder, hint, ...props }) => {
   const Component = typeof input === 'function' ? input : INPUTS[input] || Input;
 

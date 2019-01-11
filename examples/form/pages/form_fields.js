@@ -119,7 +119,6 @@ const TapGiantsForm = withForm({
 
     console.log('handleSubmit values: ', values);
     // handleSubmit values:
-    // handleSubmit values:
     // {
     //   active: true,
     //   color: "blue",
