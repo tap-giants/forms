@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Form, { Field, Submit, withForm } from '@tapgiants/form';
 
 const FormMarkup = ({ formName, ...formikBag }) => (
