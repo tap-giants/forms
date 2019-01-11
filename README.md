@@ -8,7 +8,7 @@ provide simple form field components with no need for form state managment.
 
 Install peer dependencies:
 ```bash
-yarn recompose
+yarn add recompose
 ```
 
 Install @tapgiants/graphql
