@@ -19,18 +19,60 @@ yarn add @tapgiants/form
 
 ## Form API
 
+`Form` component should be used in a combination with [`withForm`](#updateme) in order to receive [`formikBag`](https://jaredpalmer.com/formik/docs/api/withFormik) which will be passed to the [`FormContext`](#updateme).
+
 ### Props
 
-#### `handleSubmit: Function`
+It receives [`formikBag`](https://jaredpalmer.com/formik/docs/api/withFormik) props and
+custom props passed to the form component.
 
-A callback function that will be called when the form is submitted.
-Formik [reference](https://jaredpalmer.com/formik/docs/api/withFormik#handlesubmit-values-values-formikbag-formikbag-void).
+### Form example
+```jsx
+import React from 'react';
 
-#### `children`: Children
+import Form, { Field, Submit, withForm } from '@tapgiants/form';
 
-Form fields.
+const FormMarkup = ({ formName, ...formikBag }) => (
+  // Pass formikBag props to the Form component. In this way formik props are set in the `FormContext`
+  <Form {...formikBag}>
+    <h1>formName</h1>
 
->All passed props that are not in the list above will be passed to the form context.
+    <Field
+      input="email"
+      name="email"
+      label="E-mail"
+    />
+
+    <Field
+      input="password"
+      name="password"
+      label="Password"
+    />
+
+    <Submit>Login</Submit>
+  </Form>
+);
+
+// Here we use withForm in order to provide the FormikBag props to the Form component
+const TapGiantsForm = withForm({
+  mapPropsToValues: () => ({ email: '', password: '' }),
+  handleSubmit: (values, formikBag) => {
+    const { setSubmitting } = formikBag;
+
+    setSubmitting(false);
+
+    console.log('handleSubmit values: ', values);
+    // handleSubmit values: { email: "", password: "" }
+
+    console.log('handleSubmit formikBag', formikBag);
+    // handleSubmit formikBag: check https://jaredpalmer.com/formik/docs/api/withFormik
+  }
+})(FormMarkup)
+
+// Pass custom prop to the form
+export default () => <TapGiantsForm formName="Test Form" />;
+```
+
 
 ## Submit API
 
@@ -40,6 +82,10 @@ All passed props will be provided to the `button` tag in the component.
 
 ```jsx
 <Submit>Login</Submit>
+
+// OR
+
+<Submit className="class-name">Login</Submit>
 ```
 
 ### Field API
